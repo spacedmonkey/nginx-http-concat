@@ -11,6 +11,8 @@
  * It will also replace the relative paths in CSS files with absolute paths.
  */
 
+require __DIR__ . '/cssmin.php';
+
 /* Config */
 $concat_max_files = 150;
 $concat_unique = true;

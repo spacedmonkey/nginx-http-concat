@@ -3,13 +3,15 @@
 Plugin Name: CSS Concat
 Plugin URI: http://wp-plugins.org/#
 Description: Concatenates CSS
-Author: Automattic
-Version: 0.01
+Author: Automattic, spacedmonkey
+Version: 0.02
 Author URI: http://automattic.com/
  */
 
 if ( ! defined( 'ALLOW_GZIP_COMPRESSION' ) )
 	define( 'ALLOW_GZIP_COMPRESSION', true );
+
+require_once "inc/endpoint.php";
 
 class WPcom_CSS_Concat extends WP_Styles {
 	private $old_styles;
